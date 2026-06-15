@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roobika M — Portfolio WebXP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- SCANLINE OVERLAY -->
+  <div class="scanlines"></div>
+
+  <!-- NAV HUD -->
+  <nav class="hud-nav" id="hud-nav">
+    <div class="hud-nav-inner">
+      <span class="hud-logo">roobika.exe</span>
+      <div class="hud-links">
+        <a href="#hero">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#certs">CERTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══ -->
+  <section id="hero" class="hero-section">
+    <div class="hero-room">
+
+      <!-- Pixel room scene -->
+      <div class="room-wrapper">
+        <div class="pixel-room">
+          <!-- Room tiles -->
+          <div class="floor"></div>
+          <!-- Furniture -->
+          <div class="desk">
+            <div class="monitor">
+              <div class="monitor-screen">
+                <span class="screen-text blink">HELLO_WORLD</span>
+              </div>
+              <div class="monitor-stand"></div>
+            </div>
+          </div>
+          <div class="bookshelf">
+            <div class="book b1"></div>
+            <div class="book b2"></div>
+            <div class="book b3"></div>
+            <div class="book b4"></div>
+          </div>
+          <div class="plant">
+            <div class="plant-leaves"></div>
+            <div class="plant-pot"></div>
+          </div>
+          <!-- Sprite character -->
+          <div class="sprite-char" id="sprite">
+            <div class="sprite-head"></div>
+            <div class="sprite-hair"></div>
+            <div class="sprite-body"></div>
+            <div class="sprite-legs"></div>
+          </div>
+          <!-- Floating items -->
+          <div class="float-item fi1">💾</div>
+          <div class="float-item fi2">⚡</div>
+          <div class="float-item fi3">🐱</div>
+        </div>
+      </div>
+
+      <!-- Hero text -->
+      <div class="hero-text">
+        <div class="hero-label">PLAYER_01 LOADED</div>
+        <h1 class="hero-name">ROOBIKA M</h1>
+        <p class="hero-role">SOFTWARE DEVELOPER</p>
+        <p class="hero-subtitle">// Computer Science Undergrad · AI & Backend Builder</p>
+        <div class="dialog-box">
+          <div class="dialog-name">Roobika</div>
+          <p class="dialog-text" id="typewriter"></p>
+          <span class="dialog-cursor blink">▮</span>
+        </div>
+        <div class="hero-btns">
+          <a href="https://github.com/roobika-m" target="_blank" class="pixel-btn btn-primary">
+            <span>⚙ GITHUB</span>
+          </a>
+          <a href="https://leetcode.com/_roobika" target="_blank" class="pixel-btn btn-secondary">
+            <span>⚔ LEETCODE</span>
+          </a>
+          <a href="#contact" class="pixel-btn btn-ghost">
+            <span>✉ CONTACT</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint blink">▼ SCROLL TO EXPLORE ▼</div>
+  </section>
+
+  <!-- ══════════════════════════════════════ ABOUT ═══ -->
+  <section id="about" class="section-wrap">
+    <div class="section-header">
+      <span class="section-tag">// ABOUT</span>
+      <h2 class="section-title">WHO AM I?</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card pixel-card">
+        <div class="card-icon">🎓</div>
+        <h3>EDUCATION</h3>
+        <p>B.E. Computer Science &amp; Engineering</p>
+        <p class="accent">KGISL Institute of Technology</p>
+        <p>2023 – 2027 · CGPA: <span class="accent">8.8</span></p>
+      </div>
+      <div class="about-card pixel-card">
+        <div class="card-icon">📍</div>
+        <h3>LOCATION</h3>
+        <p>Coimbatore, Tamil Nadu</p>
+        <p class="accent">India 🇮🇳</p>
+      </div>
+      <div class="about-card pixel-card">
+        <div class="card-icon">🎯</div>
+        <h3>FOCUS</h3>
+        <p>Backend Development</p>
+        <p>AI-Powered Applications</p>
+        <p class="accent">Open Source Contributor</p>
+      </div>
+      <div class="about-card pixel-card main-about">
+        <p class="about-bio">
+          I'm a Computer Science undergraduate with a strong foundation in software engineering, backend development, 
+          and problem solving. I love building scalable systems and AI-powered solutions — from satellite imagery 
+          analysis to desktop screen summarizers.
+        </p>
+        <div class="stat-row">
+          <div class="stat"><span class="stat-num accent">4+</span><span>Projects</span></div>
+          <div class="stat"><span class="stat-num accent">8.8</span><span>CGPA</span></div>
+          <div class="stat"><span class="stat-num accent">3+</span><span>Certs</span></div>
+          <div class="stat"><span class="stat-num accent">2</span><span>Hackathons</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ SKILLS ═══ -->
+  <section id="skills" class="section-wrap alt-bg">
+    <div class="section-header">
+      <span class="section-tag">// SKILLS</span>
+      <h2 class="section-title">TECH TREE</h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category pixel-card">
+        <h3 class="skill-cat-title">⚔ LANGUAGES</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="skill-category pixel-card">
+        <h3 class="skill-cat-title">🔧 BACKEND</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-category pixel-card">
+        <h3 class="skill-cat-title">🗄 DATABASES</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Supabase</span>
+        </div>
+      </div>
+
+      <div class="skill-category pixel-card">
+        <h3 class="skill-cat-title">🖥 FRONTEND</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">TailwindCSS</span>
+        </div>
+      </div>
+
+      <div class="skill-category pixel-card">
+        <h3 class="skill-cat-title">🤖 AI / ML</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">Tesseract OCR</span>
+          <span class="skill-tag">U-Net</span>
+          <span class="skill-tag">Transformers</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">FLAN-T5</span>
+        </div>
+      </div>
+
+      <div class="skill-category pixel-card">
+        <h3 class="skill-cat-title">🛠 TOOLS</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">OpenPyXL</span>
+          <span class="skill-tag">Earth Engine</span>
+          <span class="skill-tag">Electron.js</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════ PROJECTS ═══ -->
+  <section id="projects" class="section-wrap">
+    <div class="section-header">
+      <span class="section-tag">// PROJECTS</span>
+      <h2 class="section-title">QUEST LOG</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card pixel-card" data-level="HARD">
+        <div class="proj-top">
+          <div class="proj-icon">🌲</div>
+          <div class="proj-meta">
+            <div class="proj-level">DIFFICULTY: HARD</div>
+            <div class="proj-xp accent">+500 XP</div>
+          </div>
+        </div>
+        <h3 class="proj-title">DEFORESTATION DETECTION</h3>
+        <p class="proj-desc">Semantic segmentation pipeline to detect forest loss from satellite imagery using U-Net and PyTorch. Powered by Earth Engine APIs.</p>
+        <div class="proj-tags">
+          <span>Python</span><span>Flask</span><span>PyTorch</span><span>U-Net</span><span>Earth Engine</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/Roobika-M/deforstation_detector.git" target="_blank" class="pixel-btn btn-sm">VIEW CODE ▶</a>
+        </div>
+      </div>
+
+      <div class="project-card pixel-card" data-level="MEDIUM">
+        <div class="proj-top">
+          <div class="proj-icon">👁</div>
+          <div class="proj-meta">
+            <div class="proj-level">DIFFICULTY: MEDIUM</div>
+            <div class="proj-xp accent">+350 XP</div>
+          </div>
+        </div>
+        <h3 class="proj-title">GLASSEYE — AI SCREEN SUMMARIZER</h3>
+        <p class="proj-desc">Desktop app that captures screen frames and generates contextual summaries using Tesseract OCR and FLAN-T5 transformers.</p>
+        <div class="proj-tags">
+          <span>Electron.js</span><span>Python</span><span>Flask</span><span>Tesseract</span><span>FLAN-T5</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/Roobika-M/GlassEye.git" target="_blank" class="pixel-btn btn-sm">VIEW CODE ▶</a>
+        </div>
+      </div>
+
+      <div class="project-card pixel-card" data-level="MEDIUM">
+        <div class="proj-top">
+          <div class="proj-icon">📊</div>
+          <div class="proj-meta">
+            <div class="proj-level">DIFFICULTY: MEDIUM</div>
+            <div class="proj-xp accent">+300 XP</div>
+          </div>
+        </div>
+        <h3 class="proj-title">FACULTY SELF-APPRAISAL SYSTEM</h3>
+        <p class="proj-desc">Workflow automation platform for faculty appraisal and institutional reporting with dynamic React interfaces and Flask backend.</p>
+        <div class="proj-tags">
+          <span>React</span><span>Flask</span><span>Pandas</span><span>OpenPyXL</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/Roobika-M/self-appraisal-1.git" target="_blank" class="pixel-btn btn-sm">VIEW CODE ▶</a>
+        </div>
+      </div>
+
+      <div class="project-card pixel-card" data-level="EASY">
+        <div class="proj-top">
+          <div class="proj-icon">💬</div>
+          <div class="proj-meta">
+            <div class="proj-level">DIFFICULTY: EASY</div>
+            <div class="proj-xp accent">+250 XP</div>
+          </div>
+        </div>
+        <h3 class="proj-title">CROWD WELLNESS APP</h3>
+        <p class="proj-desc">Anonymous mental wellness platform with real-time interaction, type-safe components, Supabase auth, and PostgreSQL-backed operations.</p>
+        <div class="proj-tags">
+          <span>React 18</span><span>TypeScript</span><span>TailwindCSS</span><span>Supabase</span>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/Roobika-M/well-wish.git" target="_blank" class="pixel-btn btn-sm">VIEW CODE ▶</a>
+          <a href="https://crowd-well-wish.netlify.app/" target="_blank" class="pixel-btn btn-sm btn-secondary">LIVE DEMO ▶</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ CERTS ═══ -->
+  <section id="certs" class="section-wrap alt-bg">
+    <div class="section-header">
+      <span class="section-tag">// CERTIFICATIONS</span>
+      <h2 class="section-title">ACHIEVEMENTS</h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card pixel-card">
+        <div class="cert-badge">🏆</div>
+        <div class="cert-org accent">MICROSOFT</div>
+        <div class="cert-name">Data Structures &amp; Algorithms</div>
+        <div class="cert-ribbon">UNLOCKED</div>
+      </div>
+      <div class="cert-card pixel-card">
+        <div class="cert-badge">🏆</div>
+        <div class="cert-org accent">IBM</div>
+        <div class="cert-name">Computer Networks &amp; Network Security</div>
+        <div class="cert-ribbon">UNLOCKED</div>
+      </div>
+      <div class="cert-card pixel-card">
+        <div class="cert-badge">🏆</div>
+        <div class="cert-org accent">UNIVERSITY OF LONDON</div>
+        <div class="cert-name">Object Oriented Software Engineering</div>
+        <div class="cert-ribbon">UNLOCKED</div>
+      </div>
+      <div class="cert-card pixel-card hackathon">
+        <div class="cert-badge">⚔</div>
+        <div class="cert-org accent">HACKATHONS</div>
+        <div class="cert-name">Hackxelerate (National-Level)</div>
+        <div class="cert-name">HackHazards (AI Domain)</div>
+        <div class="cert-ribbon hack-ribbon">BATTLE-TESTED</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ CONTACT ═══ -->
+  <section id="contact" class="section-wrap">
+    <div class="section-header">
+      <span class="section-tag">// CONTACT</span>
+      <h2 class="section-title">SEND A MESSAGE</h2>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-links">
+        <a href="https://github.com/roobika-m" target="_blank" class="contact-link pixel-card">
+          <span class="cl-icon">⚙</span>
+          <div>
+            <div class="cl-label accent">GITHUB</div>
+            <div class="cl-value">github.com/roobika-m</div>
+          </div>
+          <span class="cl-arrow">▶</span>
+        </a>
+        <a href="https://leetcode.com/_roobika" target="_blank" class="contact-link pixel-card">
+          <span class="cl-icon">⚔</span>
+          <div>
+            <div class="cl-label accent">LEETCODE</div>
+            <div class="cl-value">leetcode.com/_roobika</div>
+          </div>
+          <span class="cl-arrow">▶</span>
+        </a>
+        <a href="mailto:roobika23csb21@kgkite.ac.in" class="contact-link pixel-card">
+          <span class="cl-icon">✉</span>
+          <div>
+            <div class="cl-label accent">EMAIL</div>
+            <div class="cl-value">roobika_23csb21@kgkite.ac.in</div>
+          </div>
+          <span class="cl-arrow">▶</span>
+        </a>
+        <a href="tel:+919486833815" class="contact-link pixel-card">
+          <span class="cl-icon">📞</span>
+          <div>
+            <div class="cl-label accent">PHONE</div>
+            <div class="cl-value">+91 94868 33815</div>
+          </div>
+          <span class="cl-arrow">▶</span>
+        </a>
+      </div>
+
+      <form class="contact-form pixel-card" id="contact-form">
+        <h3>// SEND TRANSMISSION</h3>
+        <div class="form-group">
+          <label>NAME</label>
+          <input type="text" placeholder="ENTER YOUR NAME..." class="pixel-input" required />
+        </div>
+        <div class="form-group">
+          <label>EMAIL</label>
+          <input type="email" placeholder="ENTER YOUR EMAIL..." class="pixel-input" required />
+        </div>
+        <div class="form-group">
+          <label>MESSAGE</label>
+          <textarea placeholder="TYPE YOUR MESSAGE HERE..." class="pixel-input" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="pixel-btn btn-primary full-width">
+          TRANSMIT ▶
+        </button>
+        <div id="form-msg" class="form-msg"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2025 ROOBIKA M · BUILT WITH PIXELS</span>
+      <span class="blink">▮</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
