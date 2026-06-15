@@ -68,17 +68,37 @@ if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
+    const name = form.elements.name?.value.trim();
+    const email = form.elements.email?.value.trim();
+    const message = form.elements.message?.value.trim();
+
+    if (!name || !email || !message) {
+      formMsg.textContent = 'PLEASE FILL OUT EVERY FIELD BEFORE TRANSMITTING.';
+      formMsg.className = 'form-msg error';
+      return;
+    }
+
     btn.textContent = 'TRANSMITTING...';
     btn.disabled = true;
 
-    // Simulate send (replace with your backend/EmailJS/Formspree)
+    const subject = encodeURIComponent(`Portfolio message from ${name}`);
+    const body = encodeURIComponent([
+      `Name: ${name}`,
+      `Email: ${email}`,
+      '',
+      message
+    ].join('\n'));
+    const mailto = `mailto:roobika_23csb21@kgkite.ac.in?subject=${subject}&body=${body}`;
+
+    formMsg.textContent = 'OPENING YOUR EMAIL APP...';
+    formMsg.className = 'form-msg success';
+    window.location.href = mailto;
+
     setTimeout(() => {
-      formMsg.textContent = '✔ MESSAGE RECEIVED! I\'LL GET BACK TO YOU SOON.';
-      formMsg.className = 'form-msg success';
       btn.textContent = 'TRANSMIT ▶';
       btn.disabled = false;
       form.reset();
-    }, 1200);
+    }, 800);
   });
 }
 
