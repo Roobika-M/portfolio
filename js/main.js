@@ -81,24 +81,32 @@ if (form) {
     btn.textContent = 'TRANSMITTING...';
     btn.disabled = true;
 
-    const subject = encodeURIComponent(`Portfolio message from ${name}`);
-    const body = encodeURIComponent([
-      `Name: ${name}`,
-      `Email: ${email}`,
-      '',
-      message
-    ].join('\n'));
-    const mailto = `mailto:roobika_23csb21@kgkite.ac.in?subject=${subject}&body=${body}`;
-
-    formMsg.textContent = 'OPENING YOUR EMAIL APP...';
-    formMsg.className = 'form-msg success';
-    window.location.href = mailto;
-
-    setTimeout(() => {
-      btn.textContent = 'TRANSMIT ▶';
-      btn.disabled = false;
-      form.reset();
-    }, 800);
+    fetch('https://formsubmit.co/ajax/roobika_23csb21@kgkite.ac.in', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json'
+      },
+      body: new FormData(form)
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Message delivery failed');
+        }
+        return response.json();
+      })
+      .then(() => {
+        formMsg.textContent = 'MESSAGE SENT. I WILL GET BACK TO YOU SOON.';
+        formMsg.className = 'form-msg success';
+        form.reset();
+      })
+      .catch(() => {
+        formMsg.textContent = 'SOMETHING WENT WRONG. PLEASE TRY AGAIN OR EMAIL ME DIRECTLY.';
+        formMsg.className = 'form-msg error';
+      })
+      .finally(() => {
+        btn.textContent = 'TRANSMIT ▶';
+        btn.disabled = false;
+      });
   });
 }
 
